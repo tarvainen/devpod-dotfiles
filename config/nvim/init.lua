@@ -42,7 +42,8 @@ require('lazy').setup({
             "ThePrimeagen/harpoon",
             branch = "harpoon2",
             dependencies = { "nvim-lua/plenary.nvim" }
-        }
+        },
+        { 'mbbill/undotree' }
     },
 })
 
@@ -207,3 +208,7 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set('n', '<leader>pv', "<CMD>Oil<CR>")
 
+-----------------
+-- Undotree
+-----------------
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
