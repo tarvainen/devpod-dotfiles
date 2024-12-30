@@ -7,6 +7,7 @@
         fd
         ripgrep
         fzf
+        nodejs_22
       ];
     };
   };
