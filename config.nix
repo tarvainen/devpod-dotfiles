@@ -3,6 +3,7 @@
     myPackages = pkgs.buildEnv {
       name = "devtools";
       paths = [
+        gcc
         neovim
         fd
         ripgrep
