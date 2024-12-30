@@ -28,9 +28,6 @@ require('lazy').setup({
         {'hrsh7th/nvim-cmp'},
         {'L3MON4D3/LuaSnip'},
         {
-            "rest-nvim/rest.nvim",
-        },
-        {
             'stevearc/oil.nvim',
             opts = {},
             dependencies = { { "echasnovski/mini.icons", opts = {} } }
@@ -45,16 +42,6 @@ require('lazy').setup({
             "ThePrimeagen/harpoon",
             branch = "harpoon2",
             dependencies = { "nvim-lua/plenary.nvim" }
-        },
-        {
-            "nvim-neo-tree/neo-tree.nvim",
-            branch = "v3.x",
-            dependencies = {
-                "nvim-lua/plenary.nvim",
-                "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-                "MunifTanjim/nui.nvim",
-                -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-            }
         }
     },
 })
@@ -220,9 +207,3 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set('n', '<leader>pv', "<CMD>Oil<CR>")
 
-
------------------
--- rest.nvim
------------------
-
-vim.keymap.set("n", "<leader>rr", "<CMD>Rest run<CR>")
